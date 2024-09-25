@@ -9,4 +9,9 @@ while True:
         resistance = float(input("Enter resistance: "))
         voltage = current * resistance
         print("The Voltage is {voltage} Volts".format(voltage=voltage))
+    elif ohms_law == '2':
+        voltage = float(input("Enter voltage: "))
+        resistance = float(input("Enter resistance: "))
+        current = voltage / resistance
+        print("The current is {current} A".format(current=current))
 #will ask the user to try again
