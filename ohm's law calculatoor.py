@@ -19,4 +19,9 @@ while True:
         current = float(input("Enter current: "))
         resistance = voltage * current
         print("The resistance is {resistance}".format(resistance=resistance))
+        continue
 #will ask the user to try again
+    try_again = input("Do you want to try again? (y/n): ")
+    if try_again == 'n':
+        print("Goodbye!Thank you for using this!")
+        break
